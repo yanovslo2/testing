@@ -1,0 +1,211 @@
+﻿/* ===== Base Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: #0c2d48;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: linear-gradient(to right, #0c2d48, #145374);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #e8b71d;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-image {
+  margin: 2rem auto;
+  max-width: 250px;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Section Styling ===== */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.alt-section {
+  background-color: #e6efff;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Order Form ===== */
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+form input {
+  width: 80%;
+  max-width: 400px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #145374;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== Team Section ===== */
+.team-section {
+  padding: 4rem 2rem;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0c2d48;
+}
+
+.team-category {
+  margin-top: 3rem;
+}
+
+.team-category h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #145374;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* === Person layout: image left, text right === */
+.team-card.horizontal {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Larger image on the left */
+.team-card.horizontal img {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+/* Text on the right */
+.team-card.horizontal .info {
+  flex: 1;
+  text-align: left;
+}
+
+.team-card.horizontal h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #145374;
+}
+
+.team-card.horizontal p {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0.3rem 0;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0c2d48;
+  color: white;
+}
